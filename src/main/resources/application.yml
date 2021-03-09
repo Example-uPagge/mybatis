@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/mybatis;DB_CLOSE_DELAY=-1;AUTO_SERVER=TRUE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  liquibase:
+    change-log: classpath:liquibase/changelog-master.xml
+  h2:
+    console:
+      enabled: true
